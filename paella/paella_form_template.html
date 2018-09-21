@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<script type="text/javascript" src="src/Abstract_Factory.js"></script>
+	<script type="text/javascript" src="src/Mini_Controller.js"></script>
+	<script type="text/javascript" src="src/Factory_Method.js"></script>
+	<script type="text/javascript" src="src/adapter.js"></script>
+	<script type="text/javascript" src="src/composite.js"></script>
+	<script type="text/javascript" src="src/Decorator.js"></script>
+	<script type="text/javascript" src="src/Singleton.js"></script>
+	<script type="text/javascript" src="src/Prototype.js"></script>
+	<script type="text/javascript" src="src/Bridge.js"></script>
+
+	<title>Restaurante Javeriana</title>
+	
+</head>
+<body>
+
+	<div class="container"> 
+		
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+
+				<h1 style="text-align: center; margin-top: 50px;">Restaurante Javeriana</h1>
+				<h3 style="text-align: center;">Menú Especial</h3>
+				
+
+				<div class = "row">
+					<div class="col-md-4">
+						
+						<div class="form-group">
+							<label for="selectControl">Paella</label>
+							<select multiple class="form-control" id="paellaPrice" onchange="executeBridge(this)">
+						      <option value="Mariscos">Mariscos</option>
+						      <option value="Vegetariana">Vegetariana</option>
+						      <option value="Carne y Pollo">Carne y Pollo</option>
+						    </select>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<label></label>
+						<div class="form-check">
+  							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Mariscos" onchange="executeBridge(this)">
+  							<label class="form-check-label" for="exampleRadios1">Mariscos</label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Vegetariana" onchange="executeBridge(this)">
+						  <label class="form-check-label" for="exampleRadios2">
+						    Vegetariana
+						  </label>
+						</div>
+
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Carne y Pollo" onchange="executeBridge(this)">
+						  <label class="form-check-label" for="exampleRadios3">
+						    Carne y Pollo
+						  </label>
+						</div>
+						
+					</div>
+
+					<div class="col-md-4">
+						<div class =  "form-group">
+							<label>Ingrese el tipo de paella
+							</label>
+							<input type="text" class="form-control" onchange="executeBridge(this)">				
+						</div>
+
+					</div>
+				</div>
+
+				<form>
+
+					<div class =  "form-group">
+						<label>Seleccione el tipo de moneda</label>
+						<input type="text" class="form-control"
+						placeholder="peso, dolar, euro" onchange="getValueCoin(this)">	
+					</div>
+
+					<div class="form-group">
+						<label for="selectControl">Precio paella</label>
+						<select multiple class="form-control" id="paellaPrice" onchange="getValuePrice(this)">
+					      <option value="12000">$12.000 pequeña</option>
+					      <option value="25000">$25.000 mediana</option>
+					      <option value="50000">$50.000 grande</option>
+					    </select>
+					</div>
+					<div class="form-group">
+						<span class="input-group-text" id="basic-addon3"><b>Todos los platos contienen:</b> <i>Ensalada tropical</i></span>
+					</div>
+
+					<div class="form-group col-md-12 text-center"> 
+					    <button type="button" class="btn btn-success" onclick="buildPaella()">Realizar Pedido</button>
+					</div>
+
+				</form>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+
+		<div class="row"></div>
+
+	</div>	
+</body>
+</html>
