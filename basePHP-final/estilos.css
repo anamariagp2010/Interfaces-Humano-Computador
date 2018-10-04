@@ -1,0 +1,225 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.crop{
+	float:left;
+	overflow:hidden;
+	height: 350px;
+	width: 40%;
+	border-radius: 50%;
+	margin-left: 5%; 
+}
+
+
+a {
+    color: white;
+    font-size: 20pt;
+    text-align: left;
+   
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+.crop {
+    border-radius: 0px 0px 200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 180px;
+    height: 100px;
+    padding: 0px;
+    position: relative;
+
+}
+
+.imgLogo {
+    position:absolute;
+    top:0px;
+    left:0px;
+    border:none;
+    border-radius: 0px ;
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.imgSocial {
+    border-radius: 50% ;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+
+.imgGrande {
+    width: 485px;
+    height: 750px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+
+.letrero {
+    font-weight:bolder;
+    text-align: left;
+
+    font-size: 50pt;
+
+}
+
+.letrero2 {
+    font-weight:lighter;
+    text-align: center;
+
+    font-size: 19pt;
+
+}
+
+.divLetrero {
+     margin-left: 70px;
+}
+
+.letreroMid {
+    text-align: center;
+    font-weight:bolder;
+    font-size: 19pt;
+    color: white;
+}
+
+.texto {
+    font-weight:bolder;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 17pt;
+}
+
+.button {
+    background-color: #DB3434; 
+    border: none;
+    color: white;
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.select2 {
+    background-color: #E8E7E3; 
+    border: none;
+    color: gray;
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.select3 {
+    background-color: #E8E7E3; 
+    border: none;
+    color: gray;
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    background-image: url('icon_revista.png');
+    background-position: -5px -5px; 
+    background-size: 50px 60px;
+    background-repeat: no-repeat;
+}
+
+
+input[type=text] {
+    background-color: #E8E7E3;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buscar {
+    background-image: url('icon_buscar.png');
+    margin-left: 80px;
+    background-size: 50px 60px;
+    background-position: -10px -10px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    width: 70%;
+}
+
+.identificacion {
+    background-image: url('icon_identificacion.png');
+    margin-left: 80px;
+    background-size: 50px 60px;
+    background-position: -10px -10px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    width: 70%;
+}
+
+.inputReg {
+    width: 90%;
+}
+
+select {
+    border-radius: 10px;
+}
+
+
+.crop2 {
+    border-radius: 0px 200px 0px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 180px;
+    height: 150px;
+    padding: 0px;
+    position: relative;
+    background-color: #DB3434;
+}
+
+.contacto{
+    text-align: center;
+    font-weight:bolder;
+    font-size: 17pt;
+    color: white;
+}
+
+.contacto2{
+    text-align: center;
+    font-weight:lighter;
+    font-size: 12pt;
+    color: white;
+}
+
+
+
+.texto2{
+    text-align: center;
+    font-weight:lighter;
+    font-size: 12pt;
+    color: black;
+}
+
+p {line-height: 100%;}
+
